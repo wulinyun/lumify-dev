@@ -1,0 +1,7 @@
+
+<% _.keys(actions).forEach(function(actionName) { %>
+  <button 
+      class="actionbarbutton"
+      data-event="<%= actions[actionName] %>"
+    ><%= actionName %></button>
+<% }); %>

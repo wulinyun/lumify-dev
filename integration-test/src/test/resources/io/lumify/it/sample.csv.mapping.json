@@ -1,0 +1,26 @@
+{
+  "type": "csv",
+  "skipRows": 1,
+  "entities": {
+    "person": {
+      "conceptIRI": "http://lumify.io/test#person",
+      "properties": {
+        "http://lumify.io/test#firstName": { "index": 0 },
+        "http://lumify.io/test#lastName": { "index": 1 }
+      }
+    },
+    "company": {
+      "conceptIRI": "http://lumify.io/test#company",
+      "properties": {
+        "http://lumify.io/test#name": { "index": 2 }
+      }
+    }
+  },
+  "relationships": [
+    {
+      "label": "http://lumify.io/test#worksFor",
+      "source": "person",
+      "target": "company"
+    }
+  ]
+}

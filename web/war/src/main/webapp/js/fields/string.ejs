@@ -1,0 +1,28 @@
+<table cellpadding="0">
+  <% if (predicates) { %>
+  <tr class="input-prepend">
+
+    <td class="predicate-row">
+      <span class="add-on"><%= i18n('field.string.form.contains') %></span>
+    </td>
+
+    <td class="input-row">
+      <% if(property.displayType === 'textarea') { %>
+        <textarea placeholder="<%= property.displayName %>"><%= value %></textarea>
+      <% } else { %>
+        <input placeholder="<%= property.displayName %>" value="<%= value %>" type="text"/>
+      <% } %>
+    </td>
+  </tr>
+  <% } else { %>
+    <tr>
+      <td class="input-row">
+        <% if(property.displayType === 'textarea') { %>
+          <textarea placeholder="<%= property.displayName %>"><%= value %></textarea>
+        <% } else { %>
+          <input placeholder="<%= property.displayName %>" value="<%= value %>" type="text"/>
+        <% } %>
+      </td>
+    </tr>
+  <% } %>
+</table>
