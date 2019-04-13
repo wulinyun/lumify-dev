@@ -9,9 +9,9 @@
     <name>Lumify</name>
 
     <scm>
-        <url>https://github.com/lumifyio/lumify</url>
-        <connection>scm:git:git://github.com:lumifyio/lumify.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:lumifyio/lumify.git</developerConnection>
+        <url>https://github.com/wulinyun/lumify-dev.git</url>
+        <connection>scm:git:git://github.com:wulinyun/lumify-dev.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:wulinyun/lumify-dev.git</developerConnection>
     </scm>
 
     <inceptionYear>2013</inceptionYear>
@@ -143,17 +143,16 @@
 
     <distributionManagement>
         <repository>
-            <id>bits.lumify.io.releases</id>
-            <url>https://bits.lumify.io/nexus/content/repositories/releases</url>
+            <id>landa-mas-releases</id>
+            <name>landa-mas releases Repository</name>
+            <url>http://nexus.landaudev.com:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
-            <id>bits.lumify.io.snapshots</id>
-            <url>https://bits.lumify.io/nexus/content/repositories/snapshots</url>
+            <id>landa-mas-snapshots</id>
+            <name>landa-mas snapshots Repository</name>
+            <url>http://nexus.landaudev.com:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
-        <site>
-            <id>temp-site</id>
-            <url>file:///tmp/lumify.io</url>
-        </site>
+
     </distributionManagement>
 
     <repositories>
