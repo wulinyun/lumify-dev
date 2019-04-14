@@ -11,6 +11,8 @@ yum update -y
 #system tools
 yum install -y wget curl tar sudo openssh-server openssh-clients git nodejs npm libuuid-devel libtool zip unzip rsync which erlang cmake bison
 yum install -y bzip2
+npm install -g inherits bower grunt
+npm install -g grunt-cli
 #ffmpeg
 #yum install -y lumify-videolan-x264 lumify-fdk-aac lumify-lame lumify-opus lumify-ogg lumify-vorbis lumify-vpx lumify-theora lumify-ffmpeg
 
