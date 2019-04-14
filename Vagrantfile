@@ -26,7 +26,7 @@ Vagrant.configure(2) do |config|
   #config.vm.synced_folder '.', '/vagrant', nfs: true
 
   # share the Maven repository so to avoid unnecessary downloading of maven dependencies
-  config.vm.synced_folder "D:/develop/repository", "/home/vagrant/.m2/repository", create: true
+  config.vm.synced_folder "/usr/local/repository", "/home/vagrant/.m2/repository", create: true
 
   # Dev configuration
   config.vm.define 'dev', primary: true do |dev|
