@@ -5,7 +5,7 @@ curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
 
 #新增部分结束
 
-#rpm -Uhv http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+rpm -Uhv http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 yum update -y
 
 #system tools
