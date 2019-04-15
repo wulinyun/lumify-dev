@@ -25,7 +25,7 @@ filename_previous=${DIR}/../../../target/.webapp-build.previous.$(id -un)
 
 touch $filename
 mv $filename $filename_previous
-bower list --offline > $filename
+bower list --allow-root --offline > $filename
 
 if diff $filename $filename_previous >/dev/null ; then
   grunt $1
